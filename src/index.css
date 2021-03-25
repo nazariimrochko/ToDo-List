@@ -1,0 +1,98 @@
+button{
+    outline: none;
+}
+
+.todo_form{
+    min-height:20vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/************  Style Input and  button ************/
+.todo-input,
+.todo-button,
+.clear-list{
+    padding:10px;
+    font-size:24px;
+    border:none;
+    outline: none;
+    background-color:#ffffff;
+}
+
+.todo-button,.clear-list{
+    color: #BB3F36;
+    cursor:pointer;
+    border:none;
+    background-color:#ffffff;
+    transition:all 0.3s ease;
+}
+.todo-button{
+    width: 50px;
+}
+.todo-button:hover{
+   color: #ffffff;
+    border: none;
+    background-color:#BB3F36;
+}
+/********* Style Shell for  list ***********/
+
+.todo-wrap{
+    padding:5px;
+    display:flex;
+    flex-Direction:column;
+    height:max-content;
+}
+.todo-container{
+    height: max-content;
+    max-width: 1000px;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+}
+.todo-list{
+    align-items: center;
+    list-style:none;
+    padding: 0;
+}
+/************ Create  list and item ************/
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    color: #000000;
+    background-color:rgba(253,195,134,0.2);
+    font-size: 20px;
+    transition: all ease-in-out 1s;
+}
+.todo li {
+    min-width: 310px;
+    flex: 1;
+    margin: 0 10px;
+
+}
+
+.trash-btn,
+.complete-btn{
+    font-size: 18px;
+    border: none;
+    height:45px;
+    background-color:#80F68E;
+}
+.trash-btn:hover{
+    background-color:#FF5359;
+}
+
+.complete-btn:hover{
+    background-color:#FDD061;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fail{
+    transform: translateY(128px) rotateZ(20deg);
+    opacity: 0;
+}
+

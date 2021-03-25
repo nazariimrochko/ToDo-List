@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Todo-List</title>
+  </head>
+  <body><header>
+    <h1>ToDo List</h1>
+  </header>
+  <div class="todo-wrap">
+    <form class="todo_form">
+      <input type="text" class="todo-input" placeholder="What are you plans?">
+      <button class="todo-button" type="submit">+</button>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list">
+
+      </ul>
+    </div>
+  </div>
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(90deg, rgba(131,58,180,0.6238532110091743) 0%,
+      rgba(253,29,29,0.6261467889908257) 52%, rgba(252,176,69,0.6376146788990826) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ffffff;
+      font-family: "Poppins",sans-serif;
+
+    }
+    h1 {
+      font-size: 74px;
+      background: -webkit-linear-gradient(#000000, #FF3B2D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  </body>
+</html>
